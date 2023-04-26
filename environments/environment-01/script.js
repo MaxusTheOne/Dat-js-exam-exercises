@@ -30,9 +30,9 @@ function showUsers(users) {
 
 // del 3
 function getAdmins(users) {
-    const results = users.filter(checkRole);
+    const results = users.filter(isAdmin);
 
-    function checkRole(user) {
+    function isAdmin(user) {
         return user.role === "admin";
     }
 
