@@ -22,11 +22,22 @@ function showUsers(users) {
             <li>${user.name} - active: ${user.active}</li>
         `;
 
-        document
-            .querySelector("#userlist")
-            .insertAdjacentHTML("beforeend", html);
+        document.querySelector("#userlist").insertAdjacentHTML("beforeend", html);
     }
 }
+
+// // del 3 - alternativ
+// function showUsers(users) {
+//     for (const user of users) {
+//         if (user.role === "admin") {
+//             const html = /*html*/ `
+//             <li>${user.name} - active: ${user.active}</li>
+//         `;
+
+//             document.querySelector("#userlist").insertAdjacentHTML("beforeend", html);
+//         }
+//     }
+// }
 
 // del 3
 function getAdmins(users) {
